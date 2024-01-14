@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.item.input {
+  grid-column: span 5;
+  text-align: right;
+  padding: 15px;
+  font-size: 20px;
+  background-color: #eee;
+}
+
+.item.type {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.item.clean, .item.back, .item.percent, .item.divide,
+.item.mul, .item.sub, .item.add, .item.equal {
+  background-color: #ffa500;
+  color: white;
+}
+
+.item.zero {
+  grid-column: span 2;
+}
+
+.upper {
+  vertical-align: super;
+  font-size: 0.8em;
+}
